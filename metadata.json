@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Gerador de Ícones OTClient",
+  "description": "Uma ferramenta que utiliza a IA Gemini para transformar macros simples em scripts de ícones totalmente funcionais para o OTClient V8, com opções para ícones baseados em itens ou outfits.",
+  "requestFramePermissions": []
+}

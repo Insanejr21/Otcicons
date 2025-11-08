@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⚔️ GERADOR DE ICONS OTCLIENT ⚔️</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('https://www.tibiabr.com/wp-content/uploads/2020/01/paulo-silvente-messiahs-of-bedlam-guildhall-moonkeep.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      background-color: #121212;
+      font-family: 'VT323', monospace;
+    }
+    
+    .tibia-panel {
+      background-color: #4a4a4a;
+      border: 2px solid #000;
+      border-color: #7b7b7b #2c2c2c #2c2c2c #7b7b7b;
+      box-shadow: inset 1px 1px 0px rgba(255,255,255,0.1), inset -1px -1px 0px rgba(0,0,0,0.5);
+    }
+
+    .tibia-sunken {
+      background-color: #2a2a2a;
+      border: 2px solid #000;
+      border-color: #2c2c2c #7b7b7b #7b7b7b #2c2c2c;
+      box-shadow: inset 1px 1px 2px rgba(0,0,0,0.7);
+    }
+    
+    .tibia-button {
+      background-color: #4a4a4a;
+      border: 2px solid #000;
+      border-color: #7b7b7b #2c2c2c #2c2c2c #7b7b7b;
+      box-shadow: inset 1px 1px 0px rgba(255,255,255,0.1), inset -1px -1px 0px rgba(0,0,0,0.5);
+      color: #e0e0e0;
+      font-family: 'VT323', monospace;
+      padding: 8px 16px;
+      text-align: center;
+      transition: all 50ms linear;
+    }
+    .tibia-button:hover {
+        background-color: #5a5a5a;
+    }
+    .tibia-button:active {
+      background-color: #3a3a3a;
+      border-color: #2c2c2c #7b7b7b #7b7b7b #2c2c2c;
+      transform: translate(1px, 1px);
+    }
+    
+    h2.title {
+        font-family: 'Cinzel', serif;
+        color: #FDD835;
+        text-shadow: 2px 2px 2px #000;
+    }
+
+    label, p, span {
+        font-size: 1.25rem; /* VT323 is small, so we make it bigger */
+        color: #e0e0e0;
+    }
+
+    textarea, pre, input {
+        font-size: 1.1rem;
+    }
+
+    .type-selector .tibia-button.active {
+       background-color: #3a3a3a;
+       border-color: #2c2c2c #7b7b7b #7b7b7b #2c2c2c;
+       color: #FDD835;
+    }
+
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="text-gray-200 p-5 overflow-x-hidden min-h-screen flex items-center justify-center">
+  <div id="root"></div>
+  <script type="module" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
