@@ -15,7 +15,7 @@ export async function generateIconScript(input: string, type: MacroType, itemIds
 
   try {
     const response = await ai.models.generateContent({
-        model: 'gemini-2.5-flash-latest',
+        model: 'gemini-2.5-pro',
         contents: prompt,
         config: {
           temperature: 0.5,
