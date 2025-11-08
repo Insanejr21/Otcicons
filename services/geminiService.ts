@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 import { getGeminiPrompt } from "../constants";
 import { MacroType } from "../types";
 
-const apiKey = process.env.API_KEY;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 // Only initialize if API key is available.
 const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
